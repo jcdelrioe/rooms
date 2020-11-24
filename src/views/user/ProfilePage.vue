@@ -97,7 +97,7 @@ import { mapGetters } from 'vuex';
 
 export default {
   name: 'ProfilePage',
-  data () {
+  data() {
     return {
       profile: {
         name: '',
@@ -113,7 +113,7 @@ export default {
   },
   computed: {
     ...mapGetters({
-      user: 'authUser'
+      user: 'authUser',
     }),
     userRoomsCount() {
       return this.$store.getters.userRoomsCount(this.user['.key']);

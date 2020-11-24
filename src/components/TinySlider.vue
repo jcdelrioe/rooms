@@ -25,13 +25,12 @@ export default {
         mode: 'gallery',
       };
       this.$slider = tns(settings);
-    }
+    },
   },
   beforeDestroy() {
     if (this.$slider) {
       this.$slider.destroy();
     }
   },
-}
+};
 </script>
-

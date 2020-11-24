@@ -51,6 +51,7 @@
 
 <script>
 import CurrentUser from '@/components/CurrentUser.vue';
+
 export default {
   name: 'HeaderPartial',
   methods: {

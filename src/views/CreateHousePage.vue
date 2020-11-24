@@ -55,7 +55,7 @@ export default {
       },
     };
   },
-  methods:{
+  methods: {
     save() {
       const { title, description, featuredImage } = this.publication;
       const room = {
@@ -63,7 +63,7 @@ export default {
         description,
         featured_image: featuredImage,
         publishedAt: Date.now(),
-      }
+      };
 
       this.$store.dispatch('CREATE_ROOM', room).then(() => {
         this.$router.push({ name: 'SearchPage' });
@@ -75,4 +75,3 @@ export default {
   },
 };
 </script>
-

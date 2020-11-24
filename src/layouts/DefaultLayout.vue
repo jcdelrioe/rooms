@@ -136,13 +136,13 @@ export default {
     ToggleInput,
   },
   methods: {
-    closeModal () {
+    closeModal() {
       this.$store.dispatch('TOGGLE_MODAL_STATE', {
         name: 'login',
         value: false,
       });
     },
-    closeModalRegister () {
+    closeModalRegister() {
       this.$store.dispatch('TOGGLE_MODAL_STATE', {
         name: 'register',
         value: false,
@@ -157,7 +157,7 @@ export default {
     loginHandlerSubmit() {
       this.$store.dispatch('SIGN_IN', {
         email: this.formLogin.email,
-        password: this.formLogin.password
+        password: this.formLogin.password,
       }).then(() => {
         this.closeModal();
       });

@@ -13,6 +13,6 @@ export default {
     ...mapGetters({
       user: 'authUser',
     }),
-  }
-}
+  },
+};
 </script>

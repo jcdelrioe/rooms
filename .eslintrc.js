@@ -14,8 +14,8 @@ module.exports = {
       props: true,
       ignorePropertyModificationsFor: [
         'state', // for vuex state
-      ]
-    }]
+      ],
+    }],
   },
   parserOptions: {
     parser: 'babel-eslint',
